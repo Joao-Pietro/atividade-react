@@ -1,0 +1,74 @@
+.contador-container {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #2b6cb0 100%);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contador-container h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.numero {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+    color: #e2e8f0;
+}
+
+.numero.positivo {
+    color: #68d391;
+}
+
+.numero.negativo {
+    color: #fc8181;
+}
+
+.numero.zero {
+    color: #a0aec0;
+}
+
+.mensagem {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+    min-height: 30px;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botoes button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+    color: #2c5282;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.botoes button:hover {
+    background: #e2e8f0;
+    transform: scale(1.05);
+}
+
+.botoes button.reset {
+    background: #fc8181;
+    color: #1a365d;
+}
+
+.botoes button.reset:hover {
+    background: #f56565;
+}
